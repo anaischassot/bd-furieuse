@@ -1,22 +1,84 @@
 .container-footer {
-  height: 100vh;
+  height: 80vh;
   margin: 20px 100px;
   border-top: 1px solid #fff;
+  color: #fff;
+  position: relative;
+  font-family: "Creato Display", "Arial";
+  text-transform: uppercase;
 }
 
 #logo-dargaud {
-  width: 80%;
-  margin-top: 20%;
+  width: 25%;
+  margin-top: 5%;
 }
 
 .social {
   display: flex;
   flex-direction: row;
+  margin-bottom: 2%;
 }
 
 .social img {
-  width: 15%;
+  width: 3%;
   justify-content: space-between;
-  margin-right: 10%;
+  margin-right: 3%;
+}
+
+.wrapper-about {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  line-height: 30px;
+}
+
+.about a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container-footer h3 {
+  text-transform: uppercase;
+  margin-top: 5%;
+}
+
+.link a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link {
+  line-height: 30px;
+}
+
+.container-footer .button {
+  width: 16%;
+  margin-top: 0;
+  margin-left: 2%;
+}
+
+.container-footer input {
+  text-transform: uppercase;
+  color: #040814;
+  padding: 10px;
+  padding-left: 30px;
+  width: 30%;
+  background-color: #e6affa;
+  border: none;
+}
+
+.mail {
+  display: flex;
   margin-bottom: 10%;
+}
+
+.rights {
+  text-transform: none;
+  text-align: center;
+  font-size: 13px;
 }
