@@ -1,0 +1,24 @@
+.wrapper {
+  height: 250vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.sword {
+  width: 20%;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.bulle {
+  position: absolute;
+  opacity: 0;
+  width: 25%;
+  left: 35%;
+  top: 30%;
+}

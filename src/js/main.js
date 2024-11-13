@@ -14,10 +14,45 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".slider-mask",
       start: "top top",
-      end: "+=500%",
-      markers: true,
+      end: "+=600%",
+      markers: false,
       scrub: true,
       pin: true,
     },
   });
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".container",
+        start: "top top",
+        scrub: true,
+        pin: true,
+      },
+    })
+    .to("#bubble-1", {
+      //La position que la bulle va prendre, c'est mieux de mettre en pourcentage afin de garantir une meilleure responsivité
+      left: "23%",
+      top: "10%",
+      opacity: 1, // rendre visible
+    })
+    .to("#bubble-2", {
+      left: "60%",
+      top: "20%",
+      opacity: 1,
+    })
+    .to("#bubble-3", {
+      left: "7%",
+      top: "30%",
+      opacity: 1,
+    })
+    .to("#bubble-4", {
+      left: "70%",
+      top: "60%",
+      opacity: 1,
+    })
+    .to("#bubble-5", {
+      left: "20%",
+      top: "70%",
+      opacity: 1,
+    });
 });
