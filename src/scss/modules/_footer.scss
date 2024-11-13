@@ -1,0 +1,22 @@
+.container-footer {
+  height: 100vh;
+  margin: 20px 100px;
+  border-top: 1px solid #fff;
+}
+
+#logo-dargaud {
+  width: 80%;
+  margin-top: 20%;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.social img {
+  width: 15%;
+  justify-content: space-between;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
