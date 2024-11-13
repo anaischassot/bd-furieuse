@@ -1,0 +1,55 @@
+.container-product {
+  height: 100vh;
+  margin: 20px 100px;
+  position: relative;
+}
+
+.container-product p,
+h3 {
+  color: #fff;
+  font-family: "Creato Display", "Arial";
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  width: 115%;
+  margin-bottom: 60px;
+}
+
+#bd {
+  position: absolute;
+  width: 50%;
+  bottom: 10%;
+  right: 3%;
+}
+
+#bd:hover {
+  width: 55%;
+}
+
+.container-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  border: 2px solid #e6affa;
+  padding: 15px;
+  justify-content: space-around;
+  margin-right: 40px;
+  margin-top: 5%;
+}
+
+.button p {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
