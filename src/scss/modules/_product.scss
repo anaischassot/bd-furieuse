@@ -1,5 +1,5 @@
 .container-product {
-  height: 100vh;
+  min-height: 100vh;
   margin: 20px 100px;
   position: relative;
 }
@@ -19,7 +19,6 @@ h3 {
 }
 
 h2 {
-  width: 115%;
   margin-bottom: 60px;
 }
 
@@ -28,10 +27,11 @@ h2 {
   width: 46%;
   bottom: 15%;
   right: 3%;
+  transition: transform, 0.2s;
 }
 
 #bd:hover {
-  width: 50%;
+  transform: scale(1.2);
 }
 
 .container-button {
@@ -45,6 +45,14 @@ h2 {
   justify-content: space-around;
   margin-right: 40px;
   margin-top: 5%;
+  transition: background-color 0.2s, font-weight 0.2s;
+  min-width: 20%;
+}
+
+.button:hover {
+  background-color: #e6affa;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .button p {
@@ -52,4 +60,9 @@ h2 {
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
+  transition: color 0.2s;
+}
+
+.button:hover p {
+  color: #040814;
 }

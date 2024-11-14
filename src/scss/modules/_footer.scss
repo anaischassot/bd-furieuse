@@ -16,7 +16,6 @@
 .social {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2%;
   margin-bottom: 1%;
 }
 
@@ -37,6 +36,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
+  transition: text-decoration 0.2s;
 }
 
 ul {
@@ -51,12 +51,16 @@ ul {
 .link a {
   text-decoration: none;
   text-transform: uppercase;
+  transition: text-decoration 0.2s;
   font-size: 12px;
 }
 
 .link {
   line-height: 20px;
 }
+.link a:hover,
+.about a:hover {
+  text-decoration: underline;
 }
 
 .container-footer .button {
