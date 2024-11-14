@@ -7,8 +7,42 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Puis le test de chargement du document
 document.addEventListener("DOMContentLoaded", function () {
+  // effet de parralax
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".parallax-container",
+        start: "top top",
+        scrub: 2,
+        pin: true,
+      },
+    })
+    .to("#element-3", {
+      y: 150,
+      opacity: 0,
+    })
+    .to(
+      "#element-1",
+      {
+        y: -160,
+      },
+      0
+    )
+    .to(
+      "#element-2",
+      {
+        y: 100,
+      },
+      0
+    )
+    .to(
+      "#element-4",
+      {
+        y: -100,
+      },
+      0
+    );
   // scroll horizontal
-  // Crée un effet de scroll horizontal
   gsap.to(".slider-container", {
     x: "-80%", // chaque élément .slider-item vaut 20% de .slider-container, on veut donc bouger la position x de -80% pour faire apparaitre le dernier élément: chaque élément a besoin de 20% pour apparaitre pleinement sur l'écran.
     scrollTrigger: {
