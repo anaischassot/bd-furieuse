@@ -8,22 +8,13 @@
   </head>
   <body>
     <header>
-      <!-- nav -->
-      <div class="container-nav">
-        <h1>
-          <img src="../img/logo-normal.webp" alt="Logo de Furieuse en blanc." />
-        </h1>
-        <a href="discover" id="nav-1">Découvrir Furieuse</a>
-        <a href="buy" id="nav-2">Acheter maintenant</a>
-      </div>
-
       <!-- effet parralax -->
-      <div class="parallax-container">
+      <div class="parallax-container" id="top">
         <div class="parallax-element" id="element-1">
           <img src="../img/header-floor.webp" alt="Le sol d'une falaise." />
         </div>
         <div class="parallax-element" id="element-2">
-          <img src="../img/header-background.png" alt="Un ciel rose." />
+          <img src="../img/header-background.webp" alt="Un ciel rose." />
         </div>
         <div class="parallax-element" id="element-3">
           <img
@@ -38,14 +29,27 @@
           />
         </div>
         <div class="parallax-element" id="element-5">
-          <img src="../img/gradient.webp" alt="Un dégradé noir fondu." />
+          <img src="../img/header-gradient.webp" alt="Un dégradé noir fondu." />
         </div>
       </div>
     </header>
     <main>
-      <div class="spacer"></div>
+      <!-- nav -->
+      <div class="container-nav">
+        <h1>
+          <a href="#top">
+            <img
+              src="../img/logo-normal.webp"
+              alt="Logo de Furieuse en blanc."
+            />
+          </a>
+        </h1>
+        <a href="#discover" id="nav-1">Découvrir Furieuse</a>
+        <a href="#buy" id="nav-2">Acheter maintenant</a>
+      </div>
+
       <!-- scroll horizontal -->
-      <div class="slider-mask">
+      <div class="slider-mask" id="discover">
         <div class="slider-container">
           <div class="slider-item" id="item-1">
             <img src="../img/background.webp" alt="" id="img-background" />
@@ -77,12 +81,10 @@
             <img src="../img/img-20.webp" alt="" id="img-20" />
             <img src="../img/img-21.webp" alt="" id="img-21" />
             <img src="../img/background-2.webp" alt="" id="img-background-2" />
+            <img src="../img/gradient.webp" alt="" id="gradient" />
           </div>
         </div>
       </div>
-
-      <!-- séparation -->
-      <div class="spacer"></div>
 
       <!-- bulles qui sortent de l'épée -->
       <div class="wrapper">
@@ -125,7 +127,7 @@
 
       <!-- acheter le produit -->
 
-      <div class="container-product">
+      <div class="container-product" id="buy">
         <div class="row">
           <div class="col-4">
             <h2>
