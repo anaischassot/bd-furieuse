@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".parallax-container",
-        start: "top top",
-        scrub: 2,
-        pin: true,
+        trigger: ".l-parallax-container", // Élément déclencheur : quand cet élément atteint le point de début défini, l'animation commence
+        start: "top top", // L'animation démarre quand le haut de .parallax-container atteint le haut de la fenêtre
+        scrub: 2, // Rend l'animation fluide et synchronisée avec le défilement
+        pin: true, // "Pin" fixe l'élément dans la fenêtre pendant que l'animation se déroule
       },
     })
     .to("#element-3", {
-      y: 150,
+      y: 150, // Déplace l'élément vers le bas
       opacity: 0,
     })
     .to(
@@ -43,8 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
       0
     );
   // scroll horizontal
-  gsap.to(".slider-container", {
-    x: "-80%", // chaque élément .slider-item vaut 20% de .slider-container, on veut donc bouger la position x de -80% pour faire apparaitre le dernier élément: chaque élément a besoin de 20% pour apparaitre pleinement sur l'écran.
+  gsap.to(".l-slider-container", {
+    x: "-80%", // Déplace .slider-container vers la gauche de 80% de sa largeur
+    // Ce déplacement permet d'afficher le dernier élément
     scrollTrigger: {
       trigger: ".slider-mask",
       start: "top top",
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".container",
+        trigger: ".l-container-bubbles",
         start: "top top",
         scrub: true,
         pin: true,
