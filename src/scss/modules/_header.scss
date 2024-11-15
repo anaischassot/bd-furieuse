@@ -1,20 +1,20 @@
 /* effet parralax */
 
-.parallax-container {
-  height: 70vw;
-  position: relative;
-  overflow: hidden;
-  top: 0;
-}
-
 .parallax-element {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#element-1 {
+#element-1,
+#element-2,
+#element-3,
+#element-4,
+#element-5 {
   position: absolute;
+}
+
+#element-1 {
   bottom: 0%;
   left: -2%;
   right: 0%;
@@ -25,7 +25,6 @@
 }
 
 #element-2 {
-  position: absolute;
   top: -5%;
   bottom: 0%;
   left: 0%;
@@ -34,7 +33,6 @@
 }
 
 #element-3 {
-  position: absolute;
   top: 8%;
   bottom: 0%;
   right: 35%;
@@ -44,7 +42,6 @@
 }
 
 #element-4 {
-  position: absolute;
   top: 50%;
   bottom: 0%;
   left: 35%;
@@ -55,7 +52,6 @@
 }
 
 #element-5 {
-  position: absolute;
   top: 30%;
   bottom: 0%;
   left: 0%;

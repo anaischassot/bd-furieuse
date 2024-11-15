@@ -1,12 +1,6 @@
 /* nav */
-.container-nav {
-  position: relative;
-  top: 3%;
-  z-index: 2;
-  position: sticky;
-}
 
-.container-nav h1 img {
+.l-container-nav h1 img {
   height: 40px;
   width: auto;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
@@ -15,12 +9,11 @@
   transition: transform, 0.2s;
 }
 
-.container-nav h1 img:hover {
+.l-container-nav h1 img:hover {
   transform: scale(1.1);
 }
 
-.container-nav a {
-  font-family: "Creato Display", "Arial";
+.l-container-nav a {
   font-size: 14px;
   color: white;
   text-decoration: none;
@@ -29,7 +22,7 @@
   transition: color 0.5s;
 }
 
-.container-nav a:hover {
+.l-container-nav a:hover {
   color: #e6affa;
 }
 
@@ -50,10 +43,8 @@
   overflow: hidden;
 }
 
-.slider-container {
-  display: inline-flex;
-  height: 100vh;
-  gap: 10px;
+.l-slider-container,
+.slider-item {
   position: relative;
 }
 
@@ -65,7 +56,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  position: relative;
 }
 
 .slider-item img {
@@ -81,7 +71,6 @@
 
 #img-background {
   width: 115%;
-  transform: none;
 }
 
 #img-1 {
@@ -120,7 +109,6 @@
   width: 25%;
   left: 5%;
   opacity: 0;
-  transform: none;
 }
 
 #img-6:hover {
@@ -225,23 +213,17 @@
   width: 55%;
   bottom: 0;
   right: -23%;
-  transform: none;
 }
 
 #gradient {
   width: 52%;
   bottom: 0;
   right: -22%;
-  transform: none;
 }
 
-/* séparation à laisser sinon le scroll horizontal ne fonctionnera plus mais peut etre remplacer par un fond noir par ex */
-
-.spacer {
-  height: 10vh;
-  margin-block: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
+#img-background,
+#img-background-2,
+#img-6,
+#gradient {
+  transform: none;
 }

@@ -1,0 +1,44 @@
+.l-parallax-container {
+  height: 70vw;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+}
+
+.l-container-nav {
+  position: relative;
+  top: 3%;
+  z-index: 2;
+  position: sticky;
+}
+
+.l-slider-container {
+  display: inline-flex;
+  height: 100vh;
+  gap: 10px;
+}
+
+.l-wrapper {
+  height: 250vh;
+}
+
+.l-container-bubbles {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.l-container-product {
+  min-height: 100vh;
+  margin: 20px 100px;
+  position: relative;
+}
+
+.l-container-footer {
+  height: 80vh;
+  margin: 20px 100px;
+  border-top: 1px solid #fff;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+}

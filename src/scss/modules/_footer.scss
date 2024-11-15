@@ -1,12 +1,4 @@
-.container-footer {
-  height: 80vh;
-  margin: 20px 100px;
-  border-top: 1px solid #fff;
-  color: #fff;
-  position: relative;
-  font-family: "Creato Display", "Arial";
-  text-transform: uppercase;
-}
+/* footer*/
 
 #logo-dargaud {
   width: 25%;
@@ -19,7 +11,7 @@
   margin-bottom: 1%;
 }
 
-.social img {
+.social a {
   width: 3%;
   justify-content: space-between;
   margin-right: 3%;
@@ -33,8 +25,6 @@
 }
 
 .about a {
-  text-decoration: none;
-  text-transform: uppercase;
   font-size: 16px;
   transition: text-decoration 0.2s;
 }
@@ -43,14 +33,11 @@ ul {
   list-style-type: none;
 }
 
-.container-footer h3 {
-  text-transform: uppercase;
+.l-container-footer h3 {
   margin-top: 5%;
 }
 
 .link a {
-  text-decoration: none;
-  text-transform: uppercase;
   transition: text-decoration 0.2s;
   font-size: 12px;
 }
@@ -58,18 +45,24 @@ ul {
 .link {
   line-height: 20px;
 }
+
+.about a,
+.link a {
+  text-decoration: none;
+}
+
 .link a:hover,
 .about a:hover {
   text-decoration: underline;
 }
 
-.container-footer .button {
+.l-container-footer .button {
   width: 16%;
   margin-top: 0;
   margin-left: 2%;
 }
 
-.container-footer input {
+input {
   text-transform: uppercase;
   padding: 10px;
   padding-left: 30px;

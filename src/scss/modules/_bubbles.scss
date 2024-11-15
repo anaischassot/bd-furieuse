@@ -1,22 +1,17 @@
-.wrapper {
-  height: 250vh;
-}
+/* bulles qui sortent de l'épée */
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+.sword,
+.bubble {
+  position: absolute;
 }
 
 .sword {
   width: 20%;
-  position: absolute;
   top: 40%;
   left: 40%;
 }
 
-.bulle {
-  position: absolute;
+.bubble {
   opacity: 0;
   width: 25%;
   left: 35%;
@@ -25,10 +20,4 @@
 
 .gradient {
   position: relative;
-}
-
-#gradient-2 {
-  position: absolute;
-  width: 100%;
-  top: 80%;
 }
